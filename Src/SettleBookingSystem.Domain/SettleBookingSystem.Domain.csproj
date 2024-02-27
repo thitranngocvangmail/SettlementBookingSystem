@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Core\" />
+    <None Remove="SettlementBooking\" />
+    <None Remove="Shared\" />
+    <None Remove="Shared\Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="SettlementBooking\" />
+    <Folder Include="Shared\" />
+    <Folder Include="Shared\Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SequentialGuidGenerator" Version="1.1.0" />
+  </ItemGroup>
+</Project>
